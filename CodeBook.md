@@ -90,11 +90,11 @@ I open the file with read.table because they are not csv.
 
 4 Merge
 =================
-Merge the training and the test sets to create one data set and remove duplicated and invalid names
+Merge the training and the test sets to create one data set and remove duplicated and invalid names. The dataset has 10299 observations for 564 variables (561 features + activity + subject + type).  
 
 5 Filter
 =================
-Extract only the measurements on the mean and standard deviation for each measurement by searching the string 'mean' and 'std' in upper and lower case. There are only 86 columns with that features. The resulting dataset contains subject.id, activity and these 86 feature. 
+Extract only the measurements on the mean and standard deviation for each measurement by searching the string 'mean' and 'std' in upper and lower case. There are only 86 columns with that features. The resulting dataset contains subject.id, activity and these 86 feature (88 variables). 
 
 6 Describe
 =================
@@ -104,7 +104,7 @@ Appropriately labels the data set with descriptive variable names. For good prac
 
 7 The tidy dataset
 =================
-Finally I create df_tydy from the previous dataset with the average of each variable for each activity and each subject.
+Finally I create df_tydy from the previous dataset with the average of each variable for each activity and each subject. The final tidy dataset has only one observation (the mean of all measurements) for each subject-activity pair (30 subjects * 6 activities = 180 observations in total), so It has 180 observations of 88 requested variables. 
 
 8 Save
 =================
