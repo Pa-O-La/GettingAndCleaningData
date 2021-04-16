@@ -131,11 +131,11 @@ names(df)
 # 5 From the data set in step 4, creates a second, independent tidy data set 
 # with the average of each variable for each activity and each subject.
 ############################################################################################
-df_tydy <- df %>% group_by(subject.id, activity) %>% summarize_each(mean) 
-View(df_tydy)
+df_tidy <- df %>% group_by(subject.id, activity) %>% summarize_each(mean) 
+View(df_tidy)
 
 ############################################################################################
 # save final tidy dataset
 ############################################################################################
 if(!file.exists("./output")){dir.create("./output")}
-write.csv(df_tydy, './output/df_tidy.csv')
+write.table(df_tidy, './output/df_tidy.txt', row.name=FALSE)
