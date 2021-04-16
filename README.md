@@ -7,4 +7,8 @@ The original data are from  https://d396qusza40orc.cloudfront.net/getdata%2Fproj
 
 - run_analysis.R is the script that download, elaborate and clean the inizial dataset to create the final df_tidy.
 - CodeBook.md describes the variables, the data, and any transformations or work performed to clean up the data called 
-- df_tidy.csv is the final output
+- data folder contains all the input data:
+    - the zip downloaded and 
+    - the data unzipped from the downloaded file
+- output folder contain the finale tidy dataset: 
+    - df_tidy.csv 
